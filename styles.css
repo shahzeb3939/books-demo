@@ -44,7 +44,7 @@ h1, h2{
     color: #444;
 }
 
-#book-list, #add-book, #tabbed-content{
+#book-list, #add-book, #tabbed-content, #books-checkbox {
     margin: 30px;
 }
 
@@ -113,6 +113,10 @@ h1, h2{
     content: '';
     display: block;
     clear: both;
+}
+
+.hide {
+    display: none;
 }
 
 /*
