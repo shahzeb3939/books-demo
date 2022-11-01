@@ -56,3 +56,32 @@ checkbox.addEventListener("change", function(e) {
         booklist.classList.add("hide")
     }
 })
+
+
+let searchBooksInput = document.querySelector("#search-books input");
+searchBooksInput.addEventListener("keyup", (e)=>{
+    console.log(e)
+    console.log(e.target.value)
+
+    let booksSpan = document.querySelectorAll("#book-list ul li span.name");
+    Array.from(booksSpan).forEach(book => {
+        if (book.innerText.search(e.target.value) < 0) {
+            book.parentElement.classList.add("hide")
+        } else {
+            book.parentElement.classList.remove("hide")
+        }
+    })
+
+    
+
+
+
+
+    // if (e.key === "Enter") {
+    //     console.log(true, "enter is pressed")
+    // }
+})
+
+// searchBooksInput.addEventListener("submit", (e)=>{
+//     e.preventDefault();
+// })

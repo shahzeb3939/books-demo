@@ -44,8 +44,12 @@ h1, h2{
     color: #444;
 }
 
-#book-list, #add-book, #tabbed-content, #books-checkbox {
+#book-list, #add-book, #tabbed-content {
     margin: 30px;
+}
+
+#books-checkbox {
+    margin-inline: 6em;
 }
 
 #book-list ul, #tabbed-content ul{
