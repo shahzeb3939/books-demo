@@ -65,7 +65,7 @@ searchBooksInput.addEventListener("keyup", (e)=>{
 
     let booksSpan = document.querySelectorAll("#book-list ul li span.name");
     Array.from(booksSpan).forEach(book => {
-        if (book.innerText.search(e.target.value) < 0) {
+        if ((book.innerText.search(e.target.value) < 0) && (book.innerText.toLowerCase().search(e.target.value.toLowerCase()) < 0)) {
             book.parentElement.classList.add("hide")
         } else {
             book.parentElement.classList.remove("hide")
